@@ -1,1 +1,28 @@
+function DifferentCases(str) {
+var strArrayToBeSanitized = str.split('')
+var splitWordSanitized = []
 
+for (var k = 0; k < strArrayToBeSanitized.length; k++){
+    if (/([a-z] | [A-Z] | \).test(strArrayToBeSanitized[k])) {
+      split.WordSanitized.push(strArrayToBeSanitized[k])  
+  } else {
+    splitWordSanitized.push(' ')
+  }
+} 
+
+var sanitized = splitWordSanitized.join("")
+console.log(sanitized)
+var splitWord = sanitized.split("")
+for (var i =0; i < splitWord.length; i++) {
+  var word = split.word[i].split('')
+  for (var j=0; j < word.length; j++) {
+    word [0] = word [0].toUpperCase()
+    if ( j != 0) {
+        word [j] = word [j].toLowerCase()    
+    }
+}
+  splitWord[i] = word.join('')
+}
+var s = split.Word.join("")
+return s 
+}
