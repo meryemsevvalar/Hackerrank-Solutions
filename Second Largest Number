@@ -1,0 +1,16 @@
+# Second-Largest-Number-Hackerrank
+
+function getSecondLargest(nums) {
+    // Complete the function
+     let max = nums[0]
+    if (nums.length == 1) { return max } // 1 item array can't have secondary item
+    let second = nums[1] < max ? nums[1] : max
+    for (let i of nums) {
+        if (i > max) { 
+            second = max
+            max = i 
+        }
+        if (i > second && i <  max) { second = i }
+    }
+    return second;
+}
